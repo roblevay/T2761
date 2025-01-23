@@ -25,5 +25,5 @@ GO
 
 
 
-SELECT * FROM dbo.produkteridag('2025-01-23')
+SELECT * FROM dbo.produkteridag(NULL)
 
