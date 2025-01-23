@@ -1,4 +1,4 @@
---Skapa tabell för demo
+--Skapa tabell fÃ¶r demo
 SELECT
 	*
 INTO
@@ -11,7 +11,7 @@ UPDATE produkter SET ModifiedDate=GETDATE()
 WHERE Color='Red'
 GO
 
-CREATE OR ALTER FUNCTION dbo.produkteridag (@datum DATE )
+CREATE OR ALTER FUNCTION dbo.produkteridag (@datum DATE = NULL)
 RETURNS TABLE
 AS
 RETURN
@@ -20,8 +20,9 @@ SELECT
 FROM
 	produkter
 WHERE
-	CAST(Modifieddate AS DATE)=@datum
+	CAST(ModifiedDate AS DATE) = ISNULL(@datum, CAST(GETDATE() AS DATE))
 GO
+
 
 
 SELECT * FROM dbo.produkteridag('2025-01-23')
