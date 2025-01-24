@@ -1,0 +1,7 @@
+-- Databasen Adventureworks
+--Kombinera tabellerna sales.salesorderdetail
+--sales.salesorderheader och production.product
+--Ta fram frakt, gruppera per produktnamn och år
+--Gör en fönsterfunktion OVER som visar summa totalt
+--för alla produkter, summa per produkt och summa per år
+--Använd temptabeller eller cte eller vad ni vill
