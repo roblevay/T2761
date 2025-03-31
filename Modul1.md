@@ -13,7 +13,7 @@ FROM
 ORDER BY
     ModifiedDate DESC;
 
-1.2 
+--1.2 
 SELECT
 	*
 FROM
@@ -26,7 +26,8 @@ FROM
 ORDER BY 
 	ModifiedDate desc) AS t
 
-1.3	
+--1.3	
+
 SELECT
 	*
 FROM
@@ -40,7 +41,8 @@ ORDER BY
 	ModifiedDate desc) AS t
 
  
-1.4	
+--1.4	
+
 SELECT
 	*
 FROM
@@ -53,7 +55,7 @@ FROM
 ORDER BY 
 	ModifiedDate desc) AS t(Förnamn,Efternamn, Ändringsdatum)
 
-Exercise 2: CTE – Average Price by Color
+## Exercise 2: CTE – Average Price by Color
 
 2.1 
 
@@ -82,7 +84,9 @@ GROUP BY
 	orderyear
 
  
-Exercise 3: View – Reusable Product Averages
+## Exercise 3: View – Reusable Product Averages
+
+--3.1
 
 USE Adventureworks
 GO
@@ -100,7 +104,10 @@ GROUP BY
 GO
 
 SELECT * FROM dbo.salesterritory
-Exercise 4: Inline Table-Valued Function – Customers with Long First Names
+
+## Exercise 4: Inline Table-Valued Function – Customers with Long First Names
+
+--4.1 
 USE AdventureWorksLT
 CREATE FUNCTION dbo.fn_CustomersWithLongNames(@length INT)
 RETURNS TABLE
