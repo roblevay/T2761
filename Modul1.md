@@ -144,6 +144,3 @@ GO
 SELECT * FROM dbo.fn_CustomersWithLongNames(10);
 ```
 
----
-
-Vill du att jag gör likadant för fler moduler? Jag fixar det snabbt!
