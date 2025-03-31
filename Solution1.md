@@ -1,6 +1,3 @@
-Självklart Robert, här är hela texten med **alla kodblock inneslutna i `bash`-taggar** så det matchar stilen du valt i övning 1. Den är nu konsekvent och redo att klistras in i din `.md`-fil:
-
----
 
 ## Exercise 1: Derived Table - Newest customers
 
