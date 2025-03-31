@@ -1,5 +1,8 @@
+Självklart Robert, här är hela texten med **alla kodblock inneslutna i `bash`-taggar** så det matchar stilen du valt i övning 1. Den är nu konsekvent och redo att klistras in i din `.md`-fil:
 
-## Exercise 1: Derived Table -Newest customers
+---
+
+## Exercise 1: Derived Table - Newest customers
 
 ```bash
 --1.1 
@@ -32,7 +35,6 @@ ORDER BY
 
 ```bash
 --1.3	
-
 SELECT
 	*
 FROM
@@ -44,12 +46,10 @@ FROM
 	SalesLT.Customer	
 ORDER BY 
 	ModifiedDate desc) AS t
-
 ```
 
- ```bash
+```bash
 --1.4	
-
 SELECT
 	*
 FROM
@@ -63,60 +63,72 @@ ORDER BY
 	ModifiedDate desc) AS t(Förnamn,Efternamn, Ändringsdatum)
 ```
 
+---
+
 ## Exercise 2: CTE – Average Price by Color
 
-2.1 
-
+```bash
+--2.1 
 WITH CTE_year AS
-	(
+(
 	SELECT 
-		YEAR(Modifieddate) AS orderyear
-		,CustomerID
+		YEAR(ModifiedDate) AS orderyear,
+		CustomerID
 	FROM Sales.SalesOrderHeader
-	)
+)
+```
 
-2.2
-
+```bash
+--2.2
 WITH CTE_year AS
-	(
+(
 	SELECT 
-		YEAR(Modifieddate) AS orderyear
-		,CustomerID
+		YEAR(ModifiedDate) AS orderyear,
+		CustomerID
 	FROM Sales.SalesOrderHeader
-	)
+)
 SELECT 
-	orderyear
-	,COUNT(DISTINCT CustomerID) AS cust_count
+	orderyear,
+	COUNT(DISTINCT CustomerID) AS cust_count
 FROM CTE_year
 GROUP BY
 	orderyear
+```
 
- 
+---
+
 ## Exercise 3: View – Reusable Product Averages
 
+```bash
 --3.1
-
-USE Adventureworks
+USE AdventureWorks
 GO
+
 CREATE OR ALTER VIEW dbo.salesterritory AS
 SELECT
-	name AS Territorium
-	,YEAR(Orderdate) AS År
-	,CAST(SUM(Totaldue)AS INT) AS Ordersumma
+	name AS Territorium,
+	YEAR(OrderDate) AS År,
+	CAST(SUM(TotalDue)AS INT) AS Ordersumma
 FROM
-	Sales.SalesTerritory AS t INNER JOIN Sales.SalesOrderHeader	AS s
-	ON t.TerritoryID=s.TerritoryID
+	Sales.SalesTerritory AS t
+	INNER JOIN Sales.SalesOrderHeader AS s
+	ON t.TerritoryID = s.TerritoryID
 GROUP BY
-	name
-	,YEAR(Orderdate)
+	name,
+	YEAR(OrderDate)
 GO
 
 SELECT * FROM dbo.salesterritory
+```
+
+---
 
 ## Exercise 4: Inline Table-Valued Function – Customers with Long First Names
 
+```bash
 --4.1 
 USE AdventureWorksLT
+
 CREATE FUNCTION dbo.fn_CustomersWithLongNames(@length INT)
 RETURNS TABLE
 AS
@@ -125,8 +137,13 @@ RETURN
     FROM SalesLT.Customer
     WHERE LEN(FirstName) > @length;
 GO
+```
 
+```bash
 -- Usage:
 SELECT * FROM dbo.fn_CustomersWithLongNames(10);
- 
+```
 
+---
+
+Vill du att jag gör likadant för fler moduler? Jag fixar det snabbt!
