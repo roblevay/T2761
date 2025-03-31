@@ -1,6 +1,7 @@
 
 ## Exercise 1: Derived Table -Newest customers
 
+```bash
 --1.1 
 USE AdventureWorksLT
 
@@ -12,6 +13,7 @@ FROM
     SalesLT.Customer
 ORDER BY
     ModifiedDate DESC;
+'''
 
 --1.2 
 SELECT
