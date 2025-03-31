@@ -13,7 +13,7 @@ FROM
     SalesLT.Customer
 ORDER BY
     ModifiedDate DESC;
-'''
+```
 
 --1.2 
 SELECT
