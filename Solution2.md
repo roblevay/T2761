@@ -1,6 +1,3 @@
-Självklart Robert – här kommer **övningarna snyggt inramade med bash-taggar** i GitHub-stil, redo att klistras in i din `.md`-fil.
-
----
 
 ## Exercise 1: Union, Except, Intersect
 
@@ -130,6 +127,4 @@ FROM
 OUTER APPLY dbo.fn_lastorder(c.CustomerID) AS f;
 ```
 
----
 
-Vill du att jag tar nästa modul också? Jag kör gärna hela vägen!
