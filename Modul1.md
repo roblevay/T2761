@@ -15,6 +15,7 @@ ORDER BY
     ModifiedDate DESC;
 ```
 
+```bash
 --1.2 
 SELECT
 	*
@@ -27,7 +28,9 @@ FROM
 	SalesLT.Customer	
 ORDER BY 
 	ModifiedDate desc) AS t
+```
 
+```bash
 --1.3	
 
 SELECT
@@ -42,7 +45,9 @@ FROM
 ORDER BY 
 	ModifiedDate desc) AS t
 
- 
+```
+
+ ```bash
 --1.4	
 
 SELECT
@@ -56,6 +61,7 @@ FROM
 	SalesLT.Customer	
 ORDER BY 
 	ModifiedDate desc) AS t(Förnamn,Efternamn, Ändringsdatum)
+```
 
 ## Exercise 2: CTE – Average Price by Color
 
