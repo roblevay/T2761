@@ -1,7 +1,3 @@
-Såklart Robert – här kommer hela övningen med **kodblock inramade med `bash`**, redo att klistras in i din `.md`-fil på GitHub. Jag har också lagt till små beskrivningar för tydlighet:
-
----
-
 ## Exercise 1: Aggregate Windowing Functions
 
 ```bash
@@ -155,6 +151,4 @@ FROM
 	cte;
 ```
 
----
 
-Vill du ha nästa modul också? Bara säg till – jag har momentumen nu 😄
