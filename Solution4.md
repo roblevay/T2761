@@ -1,7 +1,3 @@
-Snyggt! Här kommer **Exercise 1 och 2** från **modulen Grouping Sets & Pivoting** — snyggt formaterade med `bash`-kodblock så det matchar resten av din `.md`-fil. Bara att klistra in:
-
----
-
 ## Exercise 1: Grouping Sets
 
 ```bash
@@ -72,6 +68,3 @@ PIVOT(
 ) AS pvt;
 ```
 
----
-
-Ge mig ett tecken om du vill att jag kör vidare med nästa modul också!
