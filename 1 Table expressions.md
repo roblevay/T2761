@@ -131,8 +131,8 @@ SELECT * FROM dbo.salesterritory
 ```bash
 --4.1 
 USE AdventureWorksLT
-
-CREATE FUNCTION dbo.fn_CustomersWithLongNames(@length INT)
+GO
+CREATE OR ALTER FUNCTION dbo.fn_CustomersWithLongNames(@length INT)
 RETURNS TABLE
 AS
 RETURN
