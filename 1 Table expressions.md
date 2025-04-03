@@ -80,6 +80,9 @@ WITH CTE_year AS
 
 ```bash
 --2.2
+
+USE Adventureworks
+
 WITH CTE_year AS
 (
 	SELECT 
