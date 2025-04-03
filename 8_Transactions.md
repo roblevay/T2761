@@ -3,6 +3,9 @@
 ```bash
 -- 1.1 Utan TRANSACTION – ett lyckas, ett misslyckas, men det första kvarstår
 
+USE Adventureworks
+GO
+
 BEGIN TRY
     -- Detta fungerar: existerande BusinessEntityID
     INSERT INTO Person.PersonPhone (BusinessEntityID, PhoneNumber, PhoneNumberTypeID)
