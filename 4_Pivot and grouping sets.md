@@ -3,6 +3,9 @@
 ```bash
 -- 1.1 Gruppsummering per Territory och OrderYear
 
+USE Adventureworks
+GO
+
 SELECT
 	name AS Territory,
 	YEAR(orderdate) AS OrderYear,
