@@ -1,5 +1,8 @@
 ## Exercise 1: Create a Stored Procedure
 
+USE Adventureworks
+GO
+
 ```bash
 -- 1.1 Skapa procedur som returnerar alla svarta produkter
 
