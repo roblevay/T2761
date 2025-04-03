@@ -33,7 +33,7 @@ GO
 BEGIN TRY
     -- Försök skriva text till en kolumn som kräver numeriskt värde
     UPDATE Sales.SalesOrderDetail
-    SET OrderQty = 'ABC'
+    SET OrderQty = 'Hejsan'
     WHERE SalesOrderDetailID = 1;
 END TRY
 
