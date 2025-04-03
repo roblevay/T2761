@@ -68,7 +68,7 @@ ORDER BY
 --2.1
 
 USE Adventureworks
-
+GO
 WITH CTE_year AS
 (
 	SELECT 
@@ -82,7 +82,7 @@ WITH CTE_year AS
 --2.2
 
 USE Adventureworks
-
+GO
 WITH CTE_year AS
 (
 	SELECT 
