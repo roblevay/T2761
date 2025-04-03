@@ -81,7 +81,7 @@ FROM
 -- 2.1 Funktion som returnerar senaste ordern för en kund
 
 USE AdventureWorksLT;
-
+GO
 CREATE FUNCTION dbo.fn_lastorder(@custid INT)
 RETURNS TABLE AS 
 RETURN
