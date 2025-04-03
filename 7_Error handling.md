@@ -1,5 +1,8 @@
 ## Exercise 1: Raising Errors
 
+USE Adventureworks
+GO
+
 ```bash
 -- 1.1 Skapa ett eget felmeddelande och logga det
 
@@ -20,6 +23,9 @@ RAISERROR('Unknown Error. Call helpdesk!', 16, 1) WITH LOG;
 ---
 
 ## Exercise 2: TRY CATCH
+
+USE Adventureworks
+GO
 
 ```bash
 -- 2.1 Hantera fel med TRY...CATCH
