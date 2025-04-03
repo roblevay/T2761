@@ -24,11 +24,11 @@ RAISERROR('Unknown Error. Call helpdesk!', 16, 1) WITH LOG;
 
 ## Exercise 2: TRY CATCH
 
-USE Adventureworks
-GO
-
 ```bash
 -- 2.1 Hantera fel med TRY...CATCH
+
+USE Adventureworks
+GO
 
 BEGIN TRY
     -- Försök skriva text till en kolumn som kräver numeriskt värde
