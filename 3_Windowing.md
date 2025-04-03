@@ -3,6 +3,9 @@
 ```bash
 -- 1.1 Skapa en vy med summerad frakt per territory och år
 
+USE Adventureworks
+GO
+
 CREATE VIEW vw_territory_orders AS
 SELECT
 	name AS Territory,
