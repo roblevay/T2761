@@ -9,14 +9,14 @@ SELECT
 	Middlename,
 	Lastname
 FROM 
-	AdventureworksDW2019.dbo.DimEmployee
+	AdventureworksDW.dbo.DimEmployee
 UNION 
 SELECT
 	Firstname,
 	Middlename,
 	Lastname
 FROM 
-	AdventureWorks2017.Person.Person
+	AdventureWorks.Person.Person
 ```
 
 ```bash
@@ -27,14 +27,14 @@ SELECT
 	Middlename,
 	Lastname
 FROM 
-	AdventureworksDW2019.dbo.DimEmployee
+	AdventureworksDW.dbo.DimEmployee
 UNION ALL
 SELECT
 	Firstname,
 	Middlename,
 	Lastname
 FROM 
-	AdventureWorks2017.Person.Person
+	AdventureWorks.Person.Person
 ```
 
 ```bash
@@ -45,14 +45,14 @@ SELECT
 	Middlename,
 	Lastname
 FROM 
-	AdventureworksDW2019.dbo.DimEmployee
+	AdventureworksDW.dbo.DimEmployee
 INTERSECT
 SELECT
 	Firstname,
 	Middlename,
 	Lastname
 FROM 
-	AdventureWorks2017.Person.Person
+	AdventureWorks.Person.Person
 ```
 
 ```bash
@@ -63,14 +63,14 @@ SELECT
 	Middlename,
 	Lastname
 FROM 
-	AdventureworksDW2019.dbo.DimEmployee
+	AdventureworksDW.dbo.DimEmployee
 EXCEPT
 SELECT
 	Firstname,
 	Middlename,
 	Lastname
 FROM 
-	AdventureWorks2017.Person.Person
+	AdventureWorks.Person.Person
 ```
 
 ---
