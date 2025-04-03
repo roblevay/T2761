@@ -65,7 +65,10 @@ ORDER BY
 ## Exercise 2: CTE – Average Price by Color
 
 ```bash
---2.1 
+--2.1
+
+USE Adventureworks
+
 WITH CTE_year AS
 (
 	SELECT 
