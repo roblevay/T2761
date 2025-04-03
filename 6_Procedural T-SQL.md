@@ -1,5 +1,8 @@
 ## Exercise 1: Batches
 
+USE Adventureworks
+GO
+
 ```bash
 -- 1.1 Variabel + SELECT utan att bryta batch med GO
 
