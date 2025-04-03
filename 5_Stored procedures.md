@@ -73,6 +73,9 @@ EXEC proc_products_with_color 'blue';
 
 ## Exercise 2: Dynamic SQL
 
+USE Adventureworks
+GO
+
 ```bash
 -- 2.1 Skapa en procedur som läser från valfri tabell
 
