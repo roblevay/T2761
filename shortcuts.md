@@ -16,7 +16,7 @@ Achievement Badge:
 
 https://learn.microsoft.com/en-us/users/me/achievements?WT.mc_id=ilt_partner_webpage_wwl&ocid=501095&source=learn&redeem=D3Y45M
 
-Utvärderingen gör de som vanligt på cornerstone.se/MTM
+Utvärdering:  http://www.cornerstone.se/MTM
 
  
 
