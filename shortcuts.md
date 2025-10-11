@@ -10,7 +10,7 @@ Länk till kursmaterialet för MDP-080 på MS Learn:
 
 https://learn.microsoft.com/training/courses/dp-080t00?WT.mc_id=ilt_partner_webpage_wwl&ocid=501095#study-guide
 
- En kort guide du kan dela till deltagarna om någon behöver hjälp att skapa ett konto cornerstone.se/learnkonto
+ En kort guide du kan dela till deltagarna om någon behöver hjälp att skapa ett konto http://www.cornerstone.se/learnkonto
 
 Achievement Badge:
 
