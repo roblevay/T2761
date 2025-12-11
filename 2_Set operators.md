@@ -85,14 +85,16 @@ GO
 CREATE FUNCTION dbo.fn_lastorder(@custid INT)
 RETURNS TABLE AS 
 RETURN
-SELECT
+SELECT TOP 1
 	SalesOrderID,
 	CustomerID,
 	TotalDue
 FROM
 	SalesLT.SalesOrderHeader
 WHERE 
-	CustomerID = @custid;
+	CustomerID = @custid
+ORDER BY SalesOrderID DESC;
+
 GO
 
 -- Testa funktionen
