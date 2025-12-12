@@ -61,7 +61,7 @@ BEGIN TRY
 	BEGIN TRAN;
 
     INSERT INTO Person.PersonPhone (BusinessEntityID, PhoneNumber, PhoneNumberTypeID)
-    VALUES (1, '555-1234', 1);
+    VALUES (1, '555-1734', 1);
 
     INSERT INTO Person.PersonPhone (BusinessEntityID, PhoneNumber, PhoneNumberTypeID)
     VALUES (2, '555-9999', 1);
