@@ -61,6 +61,26 @@ GROUP BY GROUPING SETS (
 ```bash
 -- Pivottabell: rader = territories, kolumner = år, värden = frakt
 
+--Skapa vyn territoryorders
+
+SE Adventureworks
+GO
+
+CREATE OR ALTER VIEW vw_territory_orders AS
+SELECT
+	name AS Territory,
+	YEAR(orderdate) AS OrderYear,
+	CAST(SUM(freight) AS INT) AS Freight
+FROM
+	Sales.SalesTerritory AS st
+	INNER JOIN Sales.SalesOrderHeader AS soh
+	ON st.TerritoryID = soh.TerritoryID
+GROUP BY
+	name,
+	YEAR(OrderDate);
+GO
+
+--Gör pivoteringen
 SELECT 
 	*
 FROM (
